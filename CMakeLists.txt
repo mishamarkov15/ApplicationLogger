@@ -8,6 +8,6 @@ add_subdirectory(MessageLogger)
 include_directories(${CMAKE_SOURCE_DIR}/dependencies)
 link_directories(${CMAKE_SOURCE_DIR}/dependencies)
 
-add_executable(LoggerApplication main.cpp)
+add_executable(LoggerApplication main.cpp utils/utils.cpp utils/utils.h)
 
 target_link_libraries(LoggerApplication MessageLogger)
