@@ -3,6 +3,8 @@ project(LoggerApplication)
 
 set(CMAKE_CXX_STANDARD 17)
 
+add_subdirectory(MessageLogger)
+
 include_directories(${CMAKE_SOURCE_DIR}/dependencies)
 link_directories(${CMAKE_SOURCE_DIR}/dependencies)
 
